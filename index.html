@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>طبلية | TABLEYA Menu</title>
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--m:#641a1d;--m2:#8a1f27;--g:#d7aa43;--c:#fff8eb;--l:#eadcc3;--t:#2b2420}
+*{box-sizing:border-box}
+body{margin:0;background:var(--c);color:var(--t);font:16px/1.5 Tahoma,"Segoe UI",Arial,sans-serif}
+header{background:var(--m);color:#fff;padding:22px 16px 14px;border-bottom:4px solid var(--g);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+header h1{margin:0;font-size:2rem;letter-spacing:1px}
+header small{display:block;opacity:.8;font-size:.78rem}
+header .ar{font-size:2.2rem;font-weight:700}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--c);border-bottom:1px solid var(--l);padding:8px 10px;display:flex;gap:6px;overflow-x:auto}
+nav a{flex:none;padding:6px 12px;border-radius:16px;background:var(--l);color:var(--m);text-decoration:none;font-size:.9rem}
+nav a:focus-visible,input:focus-visible{outline:2px solid var(--m2);outline-offset:2px}
+.q{padding:10px 14px 0;max-width:900px;margin:auto}
+.q input{width:100%;padding:10px 14px;border:1px solid var(--l);border-radius:10px;font:inherit;background:#fff}
+main{max-width:900px;margin:auto;padding:6px 14px 30px}
+section{margin-top:22px;scroll-margin-top:56px}
+h2{margin:0;background:var(--m2);color:#fff;padding:8px 14px;border-radius:10px;border-inline-start:6px solid var(--g);font-size:1.05rem;display:flex;justify-content:space-between;gap:10px}
+h2 span{font-weight:400;opacity:.9;direction:ltr}
+.r{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 4px;border-bottom:1px solid var(--l)}
+.r b{display:block;font-weight:600}
+.r i{display:block;font-style:normal;font-size:.82rem;opacity:.7;direction:ltr;text-align:left}
+.p{font-weight:700;color:var(--m);white-space:nowrap;direction:ltr}
+.p.g{display:grid;grid-template-columns:repeat(3,3.2rem);text-align:center}
+.ph{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap}
+.note{font-size:.85rem;opacity:.8;margin:6px 4px}
+footer{background:var(--m);color:#fff;text-align:center;padding:18px 14px;font-size:.9rem}
+footer a{color:var(--g)}
+.hide{display:none}
+nav a{cursor:pointer}
+section.off{display:none}
+nav a.on{background:var(--m2);color:#fff}
+@media print{nav,.q{display:none}}
+
+body.has-bar{padding-bottom:84px}
+.p.g{gap:4px}
+.add{font:inherit;font-weight:700;color:var(--m);background:#fff;border:1.5px solid var(--g);border-radius:10px;padding:4px 0;min-height:46px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.25;direction:ltr}
+.add small{font-size:.62rem;font-weight:400;opacity:.8;direction:rtl}
+.add.one{flex-direction:row;gap:8px;padding:4px 10px;min-width:4.8rem}
+.add em{font-style:normal;background:var(--m);color:#fff;border-radius:50%;width:1.4rem;height:1.4rem;line-height:1.4rem;text-align:center;font-size:1.05rem}
+.add:active,.add.ok{background:var(--g)}
+.add:focus-visible,.bar button:focus-visible,.panel button:focus-visible,.panel input:focus-visible,.panel textarea:focus-visible{outline:2px solid var(--m2);outline-offset:2px}
+.bar{position:fixed;inset-inline:0;bottom:0;z-index:20;background:var(--m);border-top:3px solid var(--g);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center}
+.bar.hide,.sheet.hide{display:none}
+.bar button{width:100%;max-width:900px;display:flex;justify-content:space-between;align-items:center;font:inherit;font-weight:700;background:var(--g);color:var(--m);border:0;border-radius:12px;padding:12px 16px;min-height:48px;cursor:pointer}
+.sheet{position:fixed;inset:0;z-index:30;background:rgba(43,36,32,.55);display:flex;align-items:flex-end;justify-content:center}
+.panel{background:var(--c);width:100%;max-width:900px;max-height:90vh;max-height:90dvh;overflow:auto;border-radius:18px 18px 0 0;padding:16px 14px calc(16px + env(safe-area-inset-bottom,0px))}
+.sh{display:flex;justify-content:space-between;align-items:center}
+.sh h3{margin:0;font-size:1.2rem;color:var(--m)}
+.x{font:inherit;width:40px;height:40px;border-radius:50%;border:1px solid var(--l);background:#fff;color:var(--m);font-size:1.1rem;cursor:pointer}
+.li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--l)}
+.li .nm{flex:1;min-width:0}
+.li .nm b{display:block;font-weight:600}
+.li .nm small{opacity:.7}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--m2);background:#fff;color:var(--m);font:inherit;font-size:1.25rem;cursor:pointer}
+.qty span{min-width:1.2rem;text-align:center;font-weight:700}
+.lt{min-width:3rem;text-align:left;font-weight:700;color:var(--m);direction:ltr}
+.tot{display:flex;justify-content:space-between;font-weight:700;font-size:1.15rem;margin-top:14px;color:var(--m)}
+.f{display:block;margin-top:12px;font-weight:600}
+.f input,.f textarea{display:block;width:100%;margin-top:4px;padding:10px 12px;border:1px solid var(--l);border-radius:10px;font:inherit;background:#fff}
+.err{color:#b00020;font-size:.9rem;margin:8px 0 0;min-height:1.2em}
+.send{display:block;width:100%;margin-top:10px;font:inherit;font-weight:700;font-size:1.05rem;background:#1a7f45;color:#fff;border:0;border-radius:12px;padding:13px;min-height:50px;cursor:pointer}
+.lnk{font:inherit;background:none;border:0;color:var(--m2);text-decoration:underline;padding:10px 0;cursor:pointer}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media print{.bar,.sheet,.add{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div><h1>TABLEYA</h1><small>Authentic Egyptian Pies • Pizza • Hawawshi</small></div>
+<div class="ar">طبلية<small>الشارقة، الإمارات</small></div>
+</header>
+<div id="tb" class="hide" style="background:var(--g);color:var(--m);text-align:center;padding:6px;font-weight:700"></div>
+<nav id="nav" aria-label="الأقسام"><a href="#c0">فطير حادق</a><a href="#c1">فطير حلو</a><a href="#c2">بيتزا طبلية</a><a href="#c3">حواوشي</a><a href="#c4">مكرونة</a><a href="#c5">كريب حادق</a><a href="#c6">سندوتشات اللحوم</a><a href="#c7">سندوتشات طبلية</a><a href="#c8">أطباق طبلية</a><a href="#c9">حلويات</a><a href="#c10">مشروبات</a></nav>
+<div class="q"><input id="s" type="search" placeholder="ابحث في القائمة… Search the menu" aria-label="بحث"><p class="note">اضغط على السعر لإضافة الصنف إلى طلبك.</p></div>
+<main id="m"><section id="c0"><h2>فطير حادق<span>Savory Feteer</span></h2><div class="r" data-q="sausage فطير سجق"><div><b>فطير سجق</b><i>Sausage</i></div><div class="p g"><span>23</span><span>31</span><span>38</span></div></div><div class="r" data-q="sausage (kiri) فطير سجق كيري"><div><b>فطير سجق كيري</b><i>Sausage (Kiri)</i></div><div class="p g"><span>28</span><span>36</span><span>43</span></div></div><div class="r" data-q="pastrami فطير بسطرمة"><div><b>فطير بسطرمة</b><i>Pastrami</i></div><div class="p g"><span>23</span><span>31</span><span>38</span></div></div><div class="r" data-q="pepperoni فطير بيبروني"><div><b>فطير بيبروني</b><i>Pepperoni</i></div><div class="p g"><span>23</span><span>31</span><span>38</span></div></div><div class="r" data-q="roast beef فطير روست بيف"><div><b>فطير روست بيف</b><i>Roast Beef</i></div><div class="p g"><span>25</span><span>33</span><span>40</span></div></div><div class="r" data-q="minced meat فطير لحم مفروم"><div><b>فطير لحم مفروم</b><i>Minced Meat</i></div><div class="p g"><span>23</span><span>31</span><span>38</span></div></div><div class="r" data-q="chicken ranch / bbq فطير دجاج رانش أو باربكيو"><div><b>فطير دجاج رانش أو باربكيو</b><i>Chicken Ranch / BBQ</i></div><div class="p g"><span>23</span><span>31</span><span>38</span></div></div><div class="r" data-q="chicken strips فطير استرس دجاج"><div><b>فطير استرس دجاج</b><i>Chicken Strips</i></div><div class="p g"><span>23</span><span>31</span><span>38</span></div></div><div class="r" data-q="romi cheese فطير جبنة رومي"><div><b>فطير جبنة رومي</b><i>Romi Cheese</i></div><div class="p g"><span>23</span><span>30</span><span>37</span></div></div><div class="r" data-q="tuna فطير تونة"><div><b>فطير تونة</b><i>Tuna</i></div><div class="p g"><span>23</span><span>30</span><span>37</span></div></div><div class="r" data-q="super supreme فطير سوبر سوبريم"><div><b>فطير سوبر سوبريم</b><i>Super Supreme</i></div><div class="p g"><span></span><span>36</span><span>43</span></div></div><div class="r" data-q="mixed meat فطير مشكل لحوم"><div><b>فطير مشكل لحوم</b><i>Mixed Meat</i></div><div class="p g"><span></span><span>37</span><span>44</span></div></div><div class="r" data-q="mixed cheese فطير مشكل جبن"><div><b>فطير مشكل جبن</b><i>Mixed Cheese</i></div><div class="p g"><span></span><span>37</span><span>44</span></div></div><div class="r" data-q="mixed vegetables فطير خضار مشكل"><div><b>فطير خضار مشكل</b><i>Mixed Vegetables</i></div><div class="p g"><span></span><span>26</span><span>33</span></div></div><p class="note">الأسعار بالترتيب من الأصغر إلى الأكبر حجماً</p></section><section id="c1"><h2>فطير حلو<span>Sweet Feteer</span></h2><div class="r" data-q="meshaltet with baladi ghee مشلتت بالسمن البلدي"><div><b>مشلتت بالسمن البلدي</b><i>Meshaltet with Baladi Ghee</i></div><div class="p g"><span></span><span>35</span><span>42</span></div></div><div class="r" data-q="kraft honey فطير كرافت بالعسل"><div><b>فطير كرافت بالعسل</b><i>Kraft Honey</i></div><div class="p g"><span>21</span><span>27</span><span>33</span></div></div><div class="r" data-q="cream & honey فطير قشطة وعسل"><div><b>فطير قشطة وعسل</b><i>Cream & Honey</i></div><div class="p g"><span>21</span><span>27</span><span>33</span></div></div><div class="r" data-q="nuts فطير مكسرات"><div><b>فطير مكسرات</b><i>Nuts</i></div><div class="p g"><span>21</span><span>27</span><span>33</span></div></div><div class="r" data-q="custard فطير كاسترد"><div><b>فطير كاسترد</b><i>Custard</i></div><div class="p g"><span>21</span><span>27</span><span>33</span></div></div><div class="r" data-q="sugar فطير سكر"><div><b>فطير سكر</b><i>Sugar</i></div><div class="p g"><span></span><span>19</span><span>25</span></div></div><div class="r" data-q="nutella فطير نوتيلا"><div><b>فطير نوتيلا</b><i>Nutella</i></div><div class="p g"><span>21</span><span>27</span><span>33</span></div></div><div class="r" data-q="nutella banana فطير نوتيلا وموز"><div><b>فطير نوتيلا وموز</b><i>Nutella Banana</i></div><div class="p g"><span>23</span><span>29</span><span>35</span></div></div><div class="r" data-q="kunafa & basbousa فطير كنافة وبسبوسة"><div><b>فطير كنافة وبسبوسة</b><i>Kunafa & Basbousa</i></div><div class="p g"><span>21</span><span>27</span><span>33</span></div></div><div class="r" data-q="date & cinnamon فطير تمر وقرفة"><div><b>فطير تمر وقرفة</b><i>Date & Cinnamon</i></div><div class="p g"><span>21</span><span>27</span><span>33</span></div></div><div class="r" data-q="tableya 4 sauces فطير طبلية 4 صوصات"><div><b>فطير طبلية 4 صوصات</b><i>Tableya 4 Sauces</i></div><div class="p g"><span></span><span>34</span><span>42</span></div></div><div class="r" data-q="bughasha with milk فطيرة بغاشة"><div><b>فطيرة بغاشة</b><i>Bughasha with Milk</i></div><div class="p g"><span></span><span>27</span><span>33</span></div></div></section><section id="c2"><h2>بيتزا طبلية<span>Tableya Pizza</span></h2><div class="r" data-q="margherita بيتزا مارجريتا"><div><b>بيتزا مارجريتا</b><i>Margherita</i></div><div class="p g"><span></span><span>22</span><span>28</span></div></div><div class="r" data-q="pastrami بيتزا بسطرمة"><div><b>بيتزا بسطرمة</b><i>Pastrami</i></div><div class="p g"><span></span><span>30</span><span>35</span></div></div><div class="r" data-q="pepperoni بيتزا بيبروني"><div><b>بيتزا بيبروني</b><i>Pepperoni</i></div><div class="p g"><span></span><span>30</span><span>36</span></div></div><div class="r" data-q="roast beef بيتزا روست بيف"><div><b>بيتزا روست بيف</b><i>Roast Beef</i></div><div class="p g"><span></span><span>33</span><span>38</span></div></div><div class="r" data-q="sausage بيتزا سجق"><div><b>بيتزا سجق</b><i>Sausage</i></div><div class="p g"><span></span><span>31</span><span>37</span></div></div><div class="r" data-q="minced beef بيتزا لحم مفروم"><div><b>بيتزا لحم مفروم</b><i>Minced Beef</i></div><div class="p g"><span></span><span>30</span><span>35</span></div></div><div class="r" data-q="bbq / ranch chicken بيتزا دجاج باربكيو أو رانش"><div><b>بيتزا دجاج باربكيو أو رانش</b><i>BBQ / Ranch Chicken</i></div><div class="p g"><span></span><span>28</span><span>34</span></div></div><div class="r" data-q="chicken strips بيتزا استرس دجاج"><div><b>بيتزا استرس دجاج</b><i>Chicken Strips</i></div><div class="p g"><span></span><span>30</span><span>36</span></div></div><div class="r" data-q="tuna بيتزا تونة"><div><b>بيتزا تونة</b><i>Tuna</i></div><div class="p g"><span></span><span>30</span><span>35</span></div></div><div class="r" data-q="super supreme بيتزا سوبر سوبريم"><div><b>بيتزا سوبر سوبريم</b><i>Super Supreme</i></div><div class="p g"><span></span><span>35</span><span>42</span></div></div><div class="r" data-q="mixed meat بيتزا مشكل لحوم"><div><b>بيتزا مشكل لحوم</b><i>Mixed Meat</i></div><div class="p g"><span></span><span>34</span><span>40</span></div></div><div class="r" data-q="mixed cheese بيتزا مشكل جبن"><div><b>بيتزا مشكل جبن</b><i>Mixed Cheese</i></div><div class="p g"><span></span><span>31</span><span>37</span></div></div><div class="r" data-q="mixed vegetable بيتزا خضار مشكل"><div><b>بيتزا خضار مشكل</b><i>Mixed Vegetable</i></div><div class="p g"><span></span><span>26</span><span>31</span></div></div></section><section id="c3"><h2>حواوشي<span>Hawawshi</span></h2><div class="r" data-q="alexandrian beef حواوشي إسكندراني باللحم"><div><b>حواوشي إسكندراني باللحم</b><i>Alexandrian Beef</i></div><div class="p">18</div></div><div class="r" data-q="beef & mozzarella حواوشي باللحم والموزاريلا"><div><b>حواوشي باللحم والموزاريلا</b><i>Beef & Mozzarella</i></div><div class="p">21</div></div><div class="r" data-q="alexandrian sausage حواوشي إسكندراني بالسجق"><div><b>حواوشي إسكندراني بالسجق</b><i>Alexandrian Sausage</i></div><div class="p">19</div></div><div class="r" data-q="pastrami & mozzarella حواوشي بسطرمة وموزاريلا"><div><b>حواوشي بسطرمة وموزاريلا</b><i>Pastrami & Mozzarella</i></div><div class="p">24</div></div><div class="r" data-q="alexandrian mixed حواوشي إسكندراني مشكل"><div><b>حواوشي إسكندراني مشكل</b><i>Alexandrian Mixed</i></div><div class="p">25</div></div><div class="r" data-q="baladi beef حواوشي بلدي باللحم"><div><b>حواوشي بلدي باللحم</b><i>Baladi Beef</i></div><div class="p">16</div></div><div class="r" data-q="baladi beef & mozzarella حواوشي بلدي بالموزاريلا"><div><b>حواوشي بلدي بالموزاريلا</b><i>Baladi Beef & Mozzarella</i></div><div class="p">19</div></div></section><section id="c4"><h2>مكرونة<span>Pasta</span></h2><div class="r" data-q="pasta with liver مكرونة كبدة"><div><b>مكرونة كبدة</b><i>Pasta with Liver</i></div><div class="p">18</div></div><div class="r" data-q="pasta with sausage مكرونة سجق"><div><b>مكرونة سجق</b><i>Pasta with Sausage</i></div><div class="p">18</div></div><div class="r" data-q="pasta bechamel & meat مكرونة بشاميل ولحم"><div><b>مكرونة بشاميل ولحم</b><i>Pasta Bechamel & Meat</i></div><div class="p">21</div></div><div class="r" data-q="bechamel, meat & mozzarella بشاميل ولحم وموزاريلا"><div><b>بشاميل ولحم وموزاريلا</b><i>Bechamel, Meat & Mozzarella</i></div><div class="p">23</div></div><div class="r" data-q="negresco pasta مكرونة نجرسكو"><div><b>مكرونة نجرسكو</b><i>Negresco Pasta</i></div><div class="p">23</div></div></section><section id="c5"><h2>كريب حادق<span>Savory Crepe</span></h2><div class="r" data-q="chicken strips crepe كريب استرس دجاج"><div><b>كريب استرس دجاج</b><i>Chicken Strips Crepe</i></div><div class="p">22</div></div><div class="r" data-q="chicken fajita crepe كريب فاهيتا دجاج"><div><b>كريب فاهيتا دجاج</b><i>Chicken Fajita Crepe</i></div><div class="p">22</div></div><div class="r" data-q="sausage crepe كريب سجق"><div><b>كريب سجق</b><i>Sausage Crepe</i></div><div class="p">22</div></div><div class="r" data-q="mixed cheese crepe كريب مشكل جبن"><div><b>كريب مشكل جبن</b><i>Mixed Cheese Crepe</i></div><div class="p">22</div></div><div class="r" data-q="mixed meat crepe كريب مشكل لحوم"><div><b>كريب مشكل لحوم</b><i>Mixed Meat Crepe</i></div><div class="p">25</div></div><div class="r" data-q="mixed chicken crepe كريب مشكل دجاج"><div><b>كريب مشكل دجاج</b><i>Mixed Chicken Crepe</i></div><div class="p">25</div></div><div class="r" data-q="extra mozzarella إضافة موزاريلا"><div><b>إضافة موزاريلا</b><i>Extra Mozzarella</i></div><div class="p">5</div></div></section><section id="c6"><h2>سندوتشات اللحوم<span>Meat Sandwiches</span></h2><div class="r" data-q="alexandrian liver ساندوتش كبدة إسكندراني"><div><b>ساندوتش كبدة إسكندراني</b><i>Alexandrian Liver</i></div><div class="p">8</div></div><div class="r" data-q="alexandrian sausage ساندوتش سجق إسكندراني"><div><b>ساندوتش سجق إسكندراني</b><i>Alexandrian Sausage</i></div><div class="p">9</div></div><div class="r" data-q="grilled sausage ساندوتش سجق مشوي"><div><b>ساندوتش سجق مشوي</b><i>Grilled Sausage</i></div><div class="p">9</div></div><div class="r" data-q="grilled kofta ساندوتش كفتة مشوية"><div><b>ساندوتش كفتة مشوية</b><i>Grilled Kofta</i></div><div class="p">10</div></div><div class="r" data-q="chicken fajita ساندوتش فاهيتا دجاج"><div><b>ساندوتش فاهيتا دجاج</b><i>Chicken Fajita</i></div><div class="p">11</div></div><div class="r" data-q="chicken strips ساندوتش استرس دجاج"><div><b>ساندوتش استرس دجاج</b><i>Chicken Strips</i></div><div class="p">12</div></div><div class="r" data-q="fried shrimp ساندوتش جمبري مقلي"><div><b>ساندوتش جمبري مقلي</b><i>Fried Shrimp</i></div><div class="p">14</div></div><div class="r" data-q="beef burger برجر لحم"><div><b>برجر لحم</b><i>Beef Burger</i></div><div class="p">14</div></div><div class="r" data-q="beef cheese burger برجر لحم بالجبن"><div><b>برجر لحم بالجبن</b><i>Beef Cheese Burger</i></div><div class="p">15</div></div><div class="r" data-q="beef burger with egg برجر لحم بالبيض"><div><b>برجر لحم بالبيض</b><i>Beef Burger with Egg</i></div><div class="p">16</div></div><div class="r" data-q="chicken burger برجر دجاج"><div><b>برجر دجاج</b><i>Chicken Burger</i></div><div class="p">14</div></div><div class="r" data-q="hot dog هوت دوج"><div><b>هوت دوج</b><i>Hot Dog</i></div><div class="p">10</div></div></section><section id="c7"><h2>سندوتشات طبلية<span>Tableya Sandwiches</span></h2><div class="r" data-q="foul with oil ساندوتش فول بالزيت"><div><b>ساندوتش فول بالزيت</b><i>Foul with Oil</i></div><div class="p">5</div></div><div class="r" data-q="foul with olive oil ساندوتش فول بزيت الزيتون"><div><b>ساندوتش فول بزيت الزيتون</b><i>Foul with Olive Oil</i></div><div class="p">5</div></div><div class="r" data-q="foul with spicy oil ساندوتش فول بزيت حار"><div><b>ساندوتش فول بزيت حار</b><i>Foul with Spicy Oil</i></div><div class="p">6</div></div><div class="r" data-q="foul with ghee ساندوتش فول بالسمن"><div><b>ساندوتش فول بالسمن</b><i>Foul with Ghee</i></div><div class="p">6</div></div><div class="r" data-q="foul with tomato ساندوتش فول بالطماطم"><div><b>ساندوتش فول بالطماطم</b><i>Foul with Tomato</i></div><div class="p">6</div></div><div class="r" data-q="alexandrian foul ساندوتش فول إسكندراني"><div><b>ساندوتش فول إسكندراني</b><i>Alexandrian Foul</i></div><div class="p">6</div></div><div class="r" data-q="foul with pastrami ساندوتش فول بالبسطرمة"><div><b>ساندوتش فول بالبسطرمة</b><i>Foul with Pastrami</i></div><div class="p">8</div></div><div class="r" data-q="foul with sausage ساندوتش فول بالسجق"><div><b>ساندوتش فول بالسجق</b><i>Foul with Sausage</i></div><div class="p">8</div></div><div class="r" data-q="foul with egg ساندوتش فول بالبيض"><div><b>ساندوتش فول بالبيض</b><i>Foul with Egg</i></div><div class="p">9</div></div><div class="r" data-q="plain falafel ساندوتش فلافل"><div><b>ساندوتش فلافل</b><i>Plain Falafel</i></div><div class="p">5</div></div><div class="r" data-q="spicy stuffed falafel ساندوتش فلافل محشية"><div><b>ساندوتش فلافل محشية</b><i>Spicy Stuffed Falafel</i></div><div class="p">6</div></div><div class="r" data-q="falafel with egg ساندوتش فلافل بالبيض"><div><b>ساندوتش فلافل بالبيض</b><i>Falafel with Egg</i></div><div class="p">7</div></div><div class="r" data-q="falafel with cheese ساندوتش فلافل بالجبن"><div><b>ساندوتش فلافل بالجبن</b><i>Falafel with Cheese</i></div><div class="p">7</div></div><div class="r" data-q="falafel with pastrami ساندوتش فلافل بالبسطرمة"><div><b>ساندوتش فلافل بالبسطرمة</b><i>Falafel with Pastrami</i></div><div class="p">8</div></div><div class="r" data-q="foul & falafel mix ساندوتش فول وفلافل ميكس"><div><b>ساندوتش فول وفلافل ميكس</b><i>Foul & Falafel Mix</i></div><div class="p">8</div></div><div class="r" data-q="mix fried sandwich ساندوتش مقالي مشكل"><div><b>ساندوتش مقالي مشكل</b><i>Mix Fried Sandwich</i></div><div class="p">8</div></div><div class="r" data-q="french fries sandwich ساندوتش بطاطس مقلية"><div><b>ساندوتش بطاطس مقلية</b><i>French Fries Sandwich</i></div><div class="p">6</div></div><div class="r" data-q="mashed potato with butter ساندوتش بطاطس مهروسة بالزبدة"><div><b>ساندوتش بطاطس مهروسة بالزبدة</b><i>Mashed Potato with Butter</i></div><div class="p">7</div></div><div class="r" data-q="mashed potato, butter & egg بطاطس بالزبدة والبيض"><div><b>بطاطس بالزبدة والبيض</b><i>Mashed Potato, Butter & Egg</i></div><div class="p">8</div></div><div class="r" data-q="mashed potato, butter & meat بطاطس بالزبدة واللحم"><div><b>بطاطس بالزبدة واللحم</b><i>Mashed Potato, Butter & Meat</i></div><div class="p">8</div></div><div class="r" data-q="fried cauliflower ساندوتش قرنبيط مقلي"><div><b>ساندوتش قرنبيط مقلي</b><i>Fried Cauliflower</i></div><div class="p">6</div></div><div class="r" data-q="eggplant sandwich ساندوتش باذنجان"><div><b>ساندوتش باذنجان</b><i>Eggplant Sandwich</i></div><div class="p">6</div></div><div class="r" data-q="moussaka sandwich ساندوتش مسقعة"><div><b>ساندوتش مسقعة</b><i>Moussaka Sandwich</i></div><div class="p">7</div></div><div class="r" data-q="moussaka with meat ساندوتش مسقعة باللحم"><div><b>ساندوتش مسقعة باللحم</b><i>Moussaka with Meat</i></div><div class="p">9</div></div><div class="r" data-q="feta cheese, tomato & cucumber ساندوتش جبنة فيتا"><div><b>ساندوتش جبنة فيتا</b><i>Feta Cheese, Tomato & Cucumber</i></div><div class="p">6</div></div><div class="r" data-q="fried cheese sandwich ساندوتش جبنة مقلية"><div><b>ساندوتش جبنة مقلية</b><i>Fried Cheese Sandwich</i></div><div class="p">8</div></div><div class="r" data-q="shakshuka sandwich ساندوتش شكشوكة"><div><b>ساندوتش شكشوكة</b><i>Shakshuka Sandwich</i></div><div class="p">7</div></div><div class="r" data-q="omelette sandwich ساندوتش أومليت"><div><b>ساندوتش أومليت</b><i>Omelette Sandwich</i></div><div class="p">6</div></div><div class="r" data-q="boiled egg sandwich ساندوتش بيض مسلوق"><div><b>ساندوتش بيض مسلوق</b><i>Boiled Egg Sandwich</i></div><div class="p">6</div></div><div class="r" data-q="egg & romi cheese ساندوتش بيض بالجبنة الرومي"><div><b>ساندوتش بيض بالجبنة الرومي</b><i>Egg & Romi Cheese</i></div><div class="p">8</div></div><div class="r" data-q="egg & pastrami ساندوتش بيض بالبسطرمة"><div><b>ساندوتش بيض بالبسطرمة</b><i>Egg & Pastrami</i></div><div class="p">9</div></div><div class="r" data-q="egg & sausage ساندوتش بيض بالسجق"><div><b>ساندوتش بيض بالسجق</b><i>Egg & Sausage</i></div><div class="p">9</div></div><div class="r" data-q="halawa & cream ساندوتش حلاوة بالقشطة"><div><b>ساندوتش حلاوة بالقشطة</b><i>Halawa & Cream</i></div><div class="p">8</div></div><div class="r" data-q="halawa, black honey & cream ساندوتش سكلانس"><div><b>ساندوتش سكلانس</b><i>Halawa, Black Honey & Cream</i></div><div class="p">9</div></div></section><section id="c8"><h2>أطباق طبلية<span>Tableya Dishes</span></h2><div class="r" data-q="alexandrian liver dish طبق كبدة إسكندراني"><div><b>طبق كبدة إسكندراني</b><i>Alexandrian Liver Dish</i></div><div class="p">20</div></div><div class="r" data-q="grilled sausage dish طبق سجق مشوي"><div><b>طبق سجق مشوي</b><i>Grilled Sausage Dish</i></div><div class="p">22</div></div><div class="r" data-q="alexandrian sausage dish طبق سجق إسكندراني"><div><b>طبق سجق إسكندراني</b><i>Alexandrian Sausage Dish</i></div><div class="p">23</div></div><div class="r" data-q="mixed liver & sausage plate طبق مشكل (كبدة وسجق)"><div><b>طبق مشكل (كبدة وسجق)</b><i>Mixed Liver & Sausage Plate</i></div><div class="p">25</div></div><div class="r" data-q="tableya breakfast tray * صينية فطار طبلية *"><div><b>صينية فطار طبلية *</b><i>Tableya Breakfast Tray *</i></div><div class="p">35</div></div><div class="r" data-q="tableya breakfast service ** سرفيس فطار طبلية **"><div><b>سرفيس فطار طبلية **</b><i>Tableya Breakfast Service **</i></div><div class="p">21</div></div><div class="r" data-q="tahabish tray *** صينية تحابيش ***"><div><b>صينية تحابيش ***</b><i>Tahabish Tray ***</i></div><div class="p">32</div></div><div class="r" data-q="foul with oil طبق فول بالزيت"><div><b>طبق فول بالزيت</b><i>Foul with Oil</i></div><div class="p">12</div></div><div class="r" data-q="foul with olive oil طبق فول بزيت الزيتون"><div><b>طبق فول بزيت الزيتون</b><i>Foul with Olive Oil</i></div><div class="p">14</div></div><div class="r" data-q="foul with spicy oil طبق فول بزيت حار"><div><b>طبق فول بزيت حار</b><i>Foul with Spicy Oil</i></div><div class="p">14</div></div><div class="r" data-q="foul with baladi ghee طبق فول بالسمن البلدي"><div><b>طبق فول بالسمن البلدي</b><i>Foul with Baladi Ghee</i></div><div class="p">15</div></div><div class="r" data-q="foul with egg طبق فول بالبيض"><div><b>طبق فول بالبيض</b><i>Foul with Egg</i></div><div class="p">15</div></div><div class="r" data-q="alexandrian foul طبق فول إسكندراني"><div><b>طبق فول إسكندراني</b><i>Alexandrian Foul</i></div><div class="p">15</div></div><div class="r" data-q="stuffed falafel (5 pcs) طبق فلافل محشية"><div><b>طبق فلافل محشية</b><i>Stuffed Falafel (5 pcs)</i></div><div class="p">12</div></div><div class="r" data-q="plain falafel (8 pcs) طبق فلافل"><div><b>طبق فلافل</b><i>Plain Falafel (8 pcs)</i></div><div class="p">12</div></div><div class="r" data-q="cheese with tomato طبق جبنة بالطماطم"><div><b>طبق جبنة بالطماطم</b><i>Cheese with Tomato</i></div><div class="p">14</div></div><div class="r" data-q="eggs with pastrami طبق بيض بالبسطرمة"><div><b>طبق بيض بالبسطرمة</b><i>Eggs with Pastrami</i></div><div class="p">15</div></div><div class="r" data-q="shakshuka طبق شكشوكة"><div><b>طبق شكشوكة</b><i>Shakshuka</i></div><div class="p">14</div></div><div class="r" data-q="moussaka طبق مسقعة"><div><b>طبق مسقعة</b><i>Moussaka</i></div><div class="p">14</div></div><div class="r" data-q="moussaka with meat طبق مسقعة باللحم"><div><b>طبق مسقعة باللحم</b><i>Moussaka with Meat</i></div><div class="p">16</div></div><div class="r" data-q="fried eggplant طبق باذنجان مقلي"><div><b>طبق باذنجان مقلي</b><i>Fried Eggplant</i></div><div class="p">12</div></div><div class="r" data-q="mixed fried vegetables طبق خضار مقلي مشكل"><div><b>طبق خضار مقلي مشكل</b><i>Mixed Fried Vegetables</i></div><div class="p">15</div></div><div class="r" data-q="mashed potato with ghee بطاطس مهروسة بالسمن"><div><b>بطاطس مهروسة بالسمن</b><i>Mashed Potato with Ghee</i></div><div class="p">12</div></div><div class="r" data-q="mashed potato with meat بطاطس مهروسة باللحم"><div><b>بطاطس مهروسة باللحم</b><i>Mashed Potato with Meat</i></div><div class="p">15</div></div><div class="r" data-q="french fries packet باكيت بطاطس مقلية"><div><b>باكيت بطاطس مقلية</b><i>French Fries Packet</i></div><div class="p">7</div></div><div class="r" data-q="french fries plate طبق بطاطس مقلية"><div><b>طبق بطاطس مقلية</b><i>French Fries Plate</i></div><div class="p">10</div></div><div class="r" data-q="plain falafel (2 pcs) فلافل سادة"><div><b>فلافل سادة</b><i>Plain Falafel (2 pcs)</i></div><div class="p">1</div></div><div class="r" data-q="spicy stuffed falafel (1 pc) فلافل محشية حارة"><div><b>فلافل محشية حارة</b><i>Spicy Stuffed Falafel (1 pc)</i></div><div class="p">1</div></div><div class="r" data-q="stuffed falafel with egg فلافل محشية بالبيض"><div><b>فلافل محشية بالبيض</b><i>Stuffed Falafel with Egg</i></div><div class="p">2.5</div></div><div class="r" data-q="stuffed falafel with cheese فلافل محشية بالجبن"><div><b>فلافل محشية بالجبن</b><i>Stuffed Falafel with Cheese</i></div><div class="p">2.5</div></div><div class="r" data-q="stuffed falafel with pastrami فلافل محشية بالبسطرمة"><div><b>فلافل محشية بالبسطرمة</b><i>Stuffed Falafel with Pastrami</i></div><div class="p">2.5</div></div><p class="note">* تحتوي على: مشلتت، عسل، فول، فلافل، جبنة، خبز — ** تحتوي على: فول، فلافل، باذنجان، بطاطس، بيض، طحينة ومخلل، خبز — *** تحتوي على: كبدة، سجق، باذنجان، بطاطس، طحينة ومخلل، خبز</p></section><section id="c9"><h2>حلويات<span>Desserts</span></h2><div class="r" data-q="ummi ali أم علي"><div><b>أم علي</b><i>Ummi Ali</i></div><div class="p">17</div></div><div class="r" data-q="kunafa with cream كنافة بالكريمة"><div><b>كنافة بالكريمة</b><i>Kunafa with Cream</i></div><div class="p">15</div></div><div class="r" data-q="kunafa mango & cream كنافة بالمانجو والكريمة"><div><b>كنافة بالمانجو والكريمة</b><i>Kunafa Mango & Cream</i></div><div class="p">17</div></div><div class="r" data-q="rice pudding أرز باللبن"><div><b>أرز باللبن</b><i>Rice Pudding</i></div><div class="p">8</div></div></section><section id="c10"><h2>مشروبات<span>Beverages</span></h2><div class="r" data-q="soft drink مشروب غازي"><div><b>مشروب غازي</b><i>Soft Drink</i></div><div class="p">4</div></div><div class="r" data-q="turkish coffee قهوة تركية"><div><b>قهوة تركية</b><i>Turkish Coffee</i></div><div class="p">5</div></div><div class="r" data-q="red / green tea شاي أحمر / أخضر"><div><b>شاي أحمر / أخضر</b><i>Red / Green Tea</i></div><div class="p">3</div></div><div class="r" data-q="nescafe نسكافيه"><div><b>نسكافيه</b><i>Nescafe</i></div><div class="p">5</div></div><div class="r" data-q="water 500 ml مياه 500 مل"><div><b>مياه 500 مل</b><i>Water 500 ml</i></div><div class="p">2</div></div><div class="r" data-q="mango juice عصير مانجو"><div><b>عصير مانجو</b><i>Mango Juice</i></div><div class="p">12</div></div><div class="r" data-q="strawberry juice عصير فراولة"><div><b>عصير فراولة</b><i>Strawberry Juice</i></div><div class="p">12</div></div></section></main>
+<footer>
+<p>جميع الأسعار شاملة ضريبة القيمة المضافة (بالدرهم) • All prices are inclusive of VAT (AED)</p>
+<p>للطلب والزيارة: <a class="ph" href="tel:068044496">068 044 496</a> &nbsp;|&nbsp; <a class="ph" href="tel:0522711849">052 271 1849</a></p>
+<p dir="ltr">Al Qasba Canal, Sharjah • Al Majaz 3, First Tower, Street 27</p>
+</footer>
+<div id="bar" class="bar hide"><button id="bb" type="button"><span>عرض طلبك (<span id="bn">0</span>)</span><span id="bt"></span></button></div>
+<div id="sheet" class="sheet hide" role="dialog" aria-modal="true" aria-labelledby="sh"><div class="panel">
+<div class="sh"><h3 id="sh">طلبك</h3><button id="sc" type="button" class="x" aria-label="إغلاق">✕</button></div>
+<div id="list"></div>
+<div class="tot"><span>الإجمالي</span><span><span id="st">0</span> درهم</span></div>
+<label class="f">رقم الطاولة<input id="tn" inputmode="numeric" maxlength="3" autocomplete="off"></label>
+<label class="f">ملاحظات (اختياري)<textarea id="nt" rows="2" maxlength="300"></textarea></label>
+<p id="err" class="err" role="alert"></p>
+<button id="send" type="button" class="send">إرسال الطلب على واتساب</button>
+<p class="note">سيفتح واتساب برسالة جاهزة، اضغط إرسال لتصل الطلب للمطعم.</p>
+<button id="clr" type="button" class="lnk">مسح الطلب</button>
+</div></div>
+<div id="live" class="sr" aria-live="polite"></div>
+<script>
+// صيغة السطر: English~العربية~السعر  (عدة أسعار تُكتب بفاصل | من الأصغر إلى الأكبر)
+const D=[
+["فطير حادق","Savory Feteer","الأسعار بالترتيب من الأصغر إلى الأكبر حجماً",`Sausage~فطير سجق~23|31|38
+Sausage (Kiri)~فطير سجق كيري~28|36|43
+Pastrami~فطير بسطرمة~23|31|38
+Pepperoni~فطير بيبروني~23|31|38
+Roast Beef~فطير روست بيف~25|33|40
+Minced Meat~فطير لحم مفروم~23|31|38
+Chicken Ranch / BBQ~فطير دجاج رانش أو باربكيو~23|31|38
+Chicken Strips~فطير استرس دجاج~23|31|38
+Romi Cheese~فطير جبنة رومي~23|30|37
+Tuna~فطير تونة~23|30|37
+Super Supreme~فطير سوبر سوبريم~36|43
+Mixed Meat~فطير مشكل لحوم~37|44
+Mixed Cheese~فطير مشكل جبن~37|44
+Mixed Vegetables~فطير خضار مشكل~26|33`],
+["فطير حلو","Sweet Feteer","",`Meshaltet with Baladi Ghee~مشلتت بالسمن البلدي~35|42
+Kraft Honey~فطير كرافت بالعسل~21|27|33
+Cream & Honey~فطير قشطة وعسل~21|27|33
+Nuts~فطير مكسرات~21|27|33
+Custard~فطير كاسترد~21|27|33
+Sugar~فطير سكر~19|25
+Nutella~فطير نوتيلا~21|27|33
+Nutella Banana~فطير نوتيلا وموز~23|29|35
+Kunafa & Basbousa~فطير كنافة وبسبوسة~21|27|33
+Date & Cinnamon~فطير تمر وقرفة~21|27|33
+Tableya 4 Sauces~فطير طبلية 4 صوصات~34|42
+Bughasha with Milk~فطيرة بغاشة~27|33`],
+["بيتزا طبلية","Tableya Pizza","",`Margherita~بيتزا مارجريتا~22|28
+Pastrami~بيتزا بسطرمة~30|35
+Pepperoni~بيتزا بيبروني~30|36
+Roast Beef~بيتزا روست بيف~33|38
+Sausage~بيتزا سجق~31|37
+Minced Beef~بيتزا لحم مفروم~30|35
+BBQ / Ranch Chicken~بيتزا دجاج باربكيو أو رانش~28|34
+Chicken Strips~بيتزا استرس دجاج~30|36
+Tuna~بيتزا تونة~30|35
+Super Supreme~بيتزا سوبر سوبريم~35|42
+Mixed Meat~بيتزا مشكل لحوم~34|40
+Mixed Cheese~بيتزا مشكل جبن~31|37
+Mixed Vegetable~بيتزا خضار مشكل~26|31`],
+["حواوشي","Hawawshi","",`Alexandrian Beef~حواوشي إسكندراني باللحم~18
+Beef & Mozzarella~حواوشي باللحم والموزاريلا~21
+Alexandrian Sausage~حواوشي إسكندراني بالسجق~19
+Pastrami & Mozzarella~حواوشي بسطرمة وموزاريلا~24
+Alexandrian Mixed~حواوشي إسكندراني مشكل~25
+Baladi Beef~حواوشي بلدي باللحم~16
+Baladi Beef & Mozzarella~حواوشي بلدي بالموزاريلا~19`],
+["مكرونة","Pasta","",`Pasta with Liver~مكرونة كبدة~18
+Pasta with Sausage~مكرونة سجق~18
+Pasta Bechamel & Meat~مكرونة بشاميل ولحم~21
+Bechamel, Meat & Mozzarella~بشاميل ولحم وموزاريلا~23
+Negresco Pasta~مكرونة نجرسكو~23`],
+["كريب حادق","Savory Crepe","",`Chicken Strips Crepe~كريب استرس دجاج~22
+Chicken Fajita Crepe~كريب فاهيتا دجاج~22
+Sausage Crepe~كريب سجق~22
+Mixed Cheese Crepe~كريب مشكل جبن~22
+Mixed Meat Crepe~كريب مشكل لحوم~25
+Mixed Chicken Crepe~كريب مشكل دجاج~25
+Extra Mozzarella~إضافة موزاريلا~5`],
+["سندوتشات اللحوم","Meat Sandwiches","",`Alexandrian Liver~ساندوتش كبدة إسكندراني~8
+Alexandrian Sausage~ساندوتش سجق إسكندراني~9
+Grilled Sausage~ساندوتش سجق مشوي~9
+Grilled Kofta~ساندوتش كفتة مشوية~10
+Chicken Fajita~ساندوتش فاهيتا دجاج~11
+Chicken Strips~ساندوتش استرس دجاج~12
+Fried Shrimp~ساندوتش جمبري مقلي~14
+Beef Burger~برجر لحم~14
+Beef Cheese Burger~برجر لحم بالجبن~15
+Beef Burger with Egg~برجر لحم بالبيض~16
+Chicken Burger~برجر دجاج~14
+Hot Dog~هوت دوج~10`],
+["سندوتشات طبلية","Tableya Sandwiches","",`Foul with Oil~ساندوتش فول بالزيت~5
+Foul with Olive Oil~ساندوتش فول بزيت الزيتون~5
+Foul with Spicy Oil~ساندوتش فول بزيت حار~6
+Foul with Ghee~ساندوتش فول بالسمن~6
+Foul with Tomato~ساندوتش فول بالطماطم~6
+Alexandrian Foul~ساندوتش فول إسكندراني~6
+Foul with Pastrami~ساندوتش فول بالبسطرمة~8
+Foul with Sausage~ساندوتش فول بالسجق~8
+Foul with Egg~ساندوتش فول بالبيض~9
+Plain Falafel~ساندوتش فلافل~5
+Spicy Stuffed Falafel~ساندوتش فلافل محشية~6
+Falafel with Egg~ساندوتش فلافل بالبيض~7
+Falafel with Cheese~ساندوتش فلافل بالجبن~7
+Falafel with Pastrami~ساندوتش فلافل بالبسطرمة~8
+Foul & Falafel Mix~ساندوتش فول وفلافل ميكس~8
+Mix Fried Sandwich~ساندوتش مقالي مشكل~8
+French Fries Sandwich~ساندوتش بطاطس مقلية~6
+Mashed Potato with Butter~ساندوتش بطاطس مهروسة بالزبدة~7
+Mashed Potato, Butter & Egg~بطاطس بالزبدة والبيض~8
+Mashed Potato, Butter & Meat~بطاطس بالزبدة واللحم~8
+Fried Cauliflower~ساندوتش قرنبيط مقلي~6
+Eggplant Sandwich~ساندوتش باذنجان~6
+Moussaka Sandwich~ساندوتش مسقعة~7
+Moussaka with Meat~ساندوتش مسقعة باللحم~9
+Feta Cheese, Tomato & Cucumber~ساندوتش جبنة فيتا~6
+Fried Cheese Sandwich~ساندوتش جبنة مقلية~8
+Shakshuka Sandwich~ساندوتش شكشوكة~7
+Omelette Sandwich~ساندوتش أومليت~6
+Boiled Egg Sandwich~ساندوتش بيض مسلوق~6
+Egg & Romi Cheese~ساندوتش بيض بالجبنة الرومي~8
+Egg & Pastrami~ساندوتش بيض بالبسطرمة~9
+Egg & Sausage~ساندوتش بيض بالسجق~9
+Halawa & Cream~ساندوتش حلاوة بالقشطة~8
+Halawa, Black Honey & Cream~ساندوتش سكلانس~9`],
+["أطباق طبلية","Tableya Dishes","* تحتوي على: مشلتت، عسل، فول، فلافل، جبنة، خبز — ** تحتوي على: فول، فلافل، باذنجان، بطاطس، بيض، طحينة ومخلل، خبز — *** تحتوي على: كبدة، سجق، باذنجان، بطاطس، طحينة ومخلل، خبز",`Alexandrian Liver Dish~طبق كبدة إسكندراني~20
+Grilled Sausage Dish~طبق سجق مشوي~22
+Alexandrian Sausage Dish~طبق سجق إسكندراني~23
+Mixed Liver & Sausage Plate~طبق مشكل (كبدة وسجق)~25
+Tableya Breakfast Tray *~صينية فطار طبلية *~35
+Tableya Breakfast Service **~سرفيس فطار طبلية **~21
+Tahabish Tray ***~صينية تحابيش ***~32
+Foul with Oil~طبق فول بالزيت~12
+Foul with Olive Oil~طبق فول بزيت الزيتون~14
+Foul with Spicy Oil~طبق فول بزيت حار~14
+Foul with Baladi Ghee~طبق فول بالسمن البلدي~15
+Foul with Egg~طبق فول بالبيض~15
+Alexandrian Foul~طبق فول إسكندراني~15
+Stuffed Falafel (5 pcs)~طبق فلافل محشية~12
+Plain Falafel (8 pcs)~طبق فلافل~12
+Cheese with Tomato~طبق جبنة بالطماطم~14
+Eggs with Pastrami~طبق بيض بالبسطرمة~15
+Shakshuka~طبق شكشوكة~14
+Moussaka~طبق مسقعة~14
+Moussaka with Meat~طبق مسقعة باللحم~16
+Fried Eggplant~طبق باذنجان مقلي~12
+Mixed Fried Vegetables~طبق خضار مقلي مشكل~15
+Mashed Potato with Ghee~بطاطس مهروسة بالسمن~12
+Mashed Potato with Meat~بطاطس مهروسة باللحم~15
+French Fries Packet~باكيت بطاطس مقلية~7
+French Fries Plate~طبق بطاطس مقلية~10
+Plain Falafel (2 pcs)~فلافل سادة~1
+Spicy Stuffed Falafel (1 pc)~فلافل محشية حارة~1
+Stuffed Falafel with Egg~فلافل محشية بالبيض~2.5
+Stuffed Falafel with Cheese~فلافل محشية بالجبن~2.5
+Stuffed Falafel with Pastrami~فلافل محشية بالبسطرمة~2.5`],
+["حلويات","Desserts","",`Ummi Ali~أم علي~17
+Kunafa with Cream~كنافة بالكريمة~15
+Kunafa Mango & Cream~كنافة بالمانجو والكريمة~17
+Rice Pudding~أرز باللبن~8`],
+["مشروبات","Beverages","",`Soft Drink~مشروب غازي~4
+Turkish Coffee~قهوة تركية~5
+Red / Green Tea~شاي أحمر / أخضر~3
+Nescafe~نسكافيه~5
+Water 500 ml~مياه 500 مل~2
+Mango Juice~عصير مانجو~12
+Strawberry Juice~عصير فراولة~12`]
+];
+const SZ=['صغير','وسط','كبير'];
+const pr=p=>{const a=p.split('|');
+  if(a.length==1)return `<div class="p"><button type="button" class="add one" data-s="" data-p="${a[0]}" aria-label="أضف إلى الطلب">${a[0]}<em>+</em></button></div>`;
+  if(a.length==2)a.unshift('');
+  return `<div class="p g">${a.map((x,k)=>x?`<button type="button" class="add" data-s="${SZ[k]}" data-p="${x}" aria-label="أضف الحجم ${SZ[k]}"><small>${SZ[k]}</small>${x}</button>`:'<span></span>').join('')}</div>`};
+const nav=document.getElementById('nav'),m=document.getElementById('m');
+nav.innerHTML='';m.innerHTML='';
+D.forEach(([ar,en,note,rows],i)=>{
+  nav.insertAdjacentHTML('beforeend',`<a role="button" tabindex="0">${ar}</a>`);
+  const items=rows.split('\n').map((l,j)=>{const[e,a,p]=l.split('~');return `<div class="r" data-id="${i}-${j}" data-n="${a}" data-q="${(e+' '+a).toLowerCase()}"><div><b>${a}</b><i>${e}</i></div>${pr(p)}</div>`}).join('');
+  m.insertAdjacentHTML('beforeend',`<section id="c${i}"><h2>${ar}<span>${en}</span></h2>${items}${note?`<p class="note">${note}</p>`:''}</section>`);
+});
+(function(){var t=/^#table-(\d{1,3})$/.exec(location.hash);if(t){var b=document.getElementById('tb');b.textContent='طاولة رقم '+t[1]+' • Table '+t[1];b.classList.remove('hide')}})();
+var cur=0;
+function show(i){cur=i;document.querySelectorAll('section').forEach(function(s,k){s.classList.toggle('off',k!==i)});Array.prototype.forEach.call(nav.children,function(a,k){a.classList.toggle('on',k===i)});window.scrollTo(0,0)}
+nav.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;e.preventDefault();document.getElementById('s').value='';document.querySelectorAll('.r').forEach(function(r){r.classList.remove('hide')});show(Array.prototype.indexOf.call(nav.children,a))});
+show(0);
+document.getElementById('s').addEventListener('input',function(e){if(e.target.value.trim()){document.querySelectorAll('section').forEach(function(s){s.classList.remove('off')})}else{show(cur)}});
+document.getElementById('s').addEventListener('input',e=>{
+  const v=e.target.value.trim().toLowerCase();
+  document.querySelectorAll('section').forEach(sec=>{
+    let n=0;sec.querySelectorAll('.r').forEach(r=>{const ok=!v||r.dataset.q.includes(v);r.classList.toggle('hide',!ok);if(ok)n++});
+    sec.classList.toggle('hide',!n);
+  });
+});
+
+(function(){
+var WA='971522711849',KEY='tableya-cart',cart=[];
+var $=function(id){return document.getElementById(id)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var fmt=function(n){return String(+n.toFixed(2))};
+try{cart=JSON.parse(sessionStorage.getItem(KEY)||'[]')}catch(e){cart=[]}
+if(!Array.isArray(cart))cart=[];
+cart=cart.filter(function(x){return x&&x.k&&x.n&&x.q>0&&x.p>=0});
+function save(){try{sessionStorage.setItem(KEY,JSON.stringify(cart))}catch(e){}}
+function total(){return cart.reduce(function(s,x){return s+x.p*x.q},0)}
+function count(){return cart.reduce(function(s,x){return s+x.q},0)}
+function tableNo(){var m=/^#table-(\d{1,3})$/.exec(location.hash);return m?m[1]:''}
+function renderBar(){var n=count();$('bar').classList.toggle('hide',!n);document.body.classList.toggle('has-bar',n>0);$('bn').textContent=n;$('bt').textContent=fmt(total())+' درهم'}
+function renderList(){
+  $('list').innerHTML=cart.length?cart.map(function(x,i){
+    return '<div class="li"><div class="nm"><b>'+esc(x.n)+'</b>'+(x.s?'<small>'+esc(x.s)+' • </small>':'')+'<small>'+fmt(x.p)+' درهم</small></div>'
+    +'<div class="qty"><button type="button" data-a="-" data-i="'+i+'" aria-label="إنقاص">−</button><span>'+x.q+'</span><button type="button" data-a="+" data-i="'+i+'" aria-label="زيادة">+</button></div>'
+    +'<div class="lt">'+fmt(x.p*x.q)+'</div></div>'}).join(''):'<p class="note">لم تضف أي صنف بعد.</p>';
+  $('st').textContent=fmt(total());
+}
+function openSheet(){var t=$('tn');if(!t.value)t.value=tableNo();renderList();$('err').textContent='';$('sheet').classList.remove('hide');$('sc').focus()}
+function closeSheet(){$('sheet').classList.add('hide');if(count())$('bb').focus()}
+document.addEventListener('click',function(e){
+  var b=e.target.closest('.add');if(!b)return;
+  var r=b.closest('.r'),k=r.dataset.id+'|'+b.dataset.s,it=cart.find(function(x){return x.k===k});
+  if(it)it.q++;else cart.push({k:k,n:r.dataset.n,s:b.dataset.s,p:parseFloat(b.dataset.p),q:1});
+  save();renderBar();$('live').textContent='تمت إضافة '+r.dataset.n;
+  b.classList.add('ok');setTimeout(function(){b.classList.remove('ok')},400);
+});
+$('bb').addEventListener('click',openSheet);
+$('sc').addEventListener('click',closeSheet);
+$('sheet').addEventListener('click',function(e){if(e.target===$('sheet'))closeSheet()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!$('sheet').classList.contains('hide'))closeSheet()});
+$('list').addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;
+  var i=+b.dataset.i,x=cart[i];if(!x)return;
+  x.q+=b.dataset.a==='+'?1:-1;if(x.q<1)cart.splice(i,1);
+  save();renderList();renderBar();
+});
+$('tn').addEventListener('input',function(){$('tn').value=$('tn').value.replace(/[٠-٩]/g,function(d){return d.charCodeAt(0)-1632}).replace(/\D/g,'')});
+$('clr').addEventListener('click',function(){if(!cart.length||confirm('مسح الطلب كله؟')){cart=[];save();renderList();renderBar();closeSheet()}});
+$('send').addEventListener('click',function(){
+  var t=$('tn').value.trim();
+  if(!cart.length){$('err').textContent='أضف صنفًا واحدًا على الأقل.';return}
+  if(!t){$('err').textContent='اكتب رقم الطاولة.';$('tn').focus();return}
+  var L=['طلب جديد — طاولة '+t,'------------'];
+  cart.forEach(function(x){L.push(x.q+' × '+x.n+(x.s?' ('+x.s+')':'')+' = '+fmt(x.p*x.q))});
+  L.push('------------','الإجمالي: '+fmt(total())+' درهم');
+  var nt=$('nt').value.trim();if(nt)L.push('ملاحظات: '+nt);
+  location.href='https://wa.me/'+WA+'?text='+encodeURIComponent(L.join('\n'));
+});
+renderBar();
+})();
+</script>
+
+
+</body></html>
